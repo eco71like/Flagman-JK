@@ -37,7 +37,7 @@
   });
 
   const revealTargets = document.querySelectorAll(
-    ".about, .split, .layouts, .highlight, .gallery, .purchase, .contact .contact__copy, .form"
+    ".about, .split, .layouts, .highlight, .location__intro, .location__map-wrap, .location__live, .gallery, .purchase, .contact .contact__copy, .form"
   );
 
   revealTargets.forEach((el) => el.classList.add("reveal"));
