@@ -17,7 +17,7 @@
       <nav class="header__nav" aria-label="Основная навигация">
         <a href="#about">О проекте</a>
         <a href="#benefits">Преимущества</a>
-        <a href="#layouts">Планировки</a>
+        <a href="#plan">Планировки</a>
         <a href="#location">Расположение</a>
         <a href="#gallery">Фото</a>
         <a href="#purchase">Покупка</a>
@@ -118,37 +118,99 @@
       </div>
     </section>
 
-    <section class="layouts" id="layouts">
+    <section class="plans" id="plan">
       <div class="container">
         <p class="section-label">Планировки</p>
-        <h2 class="section-title">Продуманные планировки для семьи</h2>
-        <p class="section-lead">От уютных однокомнатных до семейных трёхкомнатных с мастер-спальней</p>
-        <div class="layouts__grid">
-          <article class="layout">
-            <div class="layout__visual">
-              <img src="images/apt1.jpg" alt="Интерьер с опцией дизайн-проект" />
-            </div>
-            <h3>Уютная однокомнатная</h3>
-            <p>Раздельные спальня и кухня-гостиная. Классическая планировка с зонами готовки и отдыха.</p>
-            <a class="text-link" href="#contact">Получить расчёт</a>
-          </article>
-          <article class="layout">
-            <div class="layout__visual">
-              <img src="images/apt2.jpg" alt="Гостиная и кухня в квартире Флагман" />
-            </div>
-            <h3>Просторная двухкомнатная</h3>
-            <p>Мастер-спальня с ванной и гардеробной, большая кухня-гостиная и детская.</p>
-            <a class="text-link" href="#contact">Получить расчёт</a>
-          </article>
-          <article class="layout">
-            <div class="layout__visual">
-              <img src="images/apt3.jpg" alt="Мастер-спальня с гардеробной" />
-            </div>
-            <h3>Семейная трёхкомнатная</h3>
-            <p>Две детские или кабинет, два санузла, вместительный гардероб для всей семьи.</p>
-            <a class="text-link" href="#contact">Получить актуальную цену</a>
-          </article>
+        <h2 class="section-title">Продуманные эргономичные планировки для комфорта каждого члена семьи</h2>
+      </div>
+
+      <div class="plans-slider" data-slider>
+        <button class="plans-slider__arrow plans-slider__arrow--prev" type="button" aria-label="Предыдущая планировка">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <div class="plans-slider__viewport">
+          <div class="plans-slider__track">
+            <article class="plan-card is-active">
+              <div class="plan-card__draw">
+                <img src="images/plan-1.png" alt="Планировка однокомнатной квартиры 1C, 34,33 м²" />
+              </div>
+              <div class="plan-card__info">
+                <p class="plan-card__code">1C · 34,33 м²</p>
+                <h3>Уютная<br>однокомнатная</h3>
+                <p>Раздельные спальня и кухня-гостиная, классический вариант планировки. На кухне можно разделить пространство зон готовки и приёма пищи.</p>
+                <ul class="plan-card__rooms">
+                  <li>Кухня-гостиная 16,08 м²</li>
+                  <li>Спальня 10,24 м²</li>
+                  <li>Прихожая 4,19 м²</li>
+                  <li>Ванная 3,82 м²</li>
+                </ul>
+                <a class="btn btn--primary" href="#contact">Получить расчёт на квартиру</a>
+              </div>
+            </article>
+
+            <article class="plan-card">
+              <div class="plan-card__draw">
+                <img src="images/plan-2.png" alt="Планировка двухкомнатной квартиры 2C, 65,05 м²" />
+              </div>
+              <div class="plan-card__info">
+                <p class="plan-card__code">2C · 65,05 м²</p>
+                <h3>Просторная<br>двухкомнатная</h3>
+                <p>Мастер-спальня со своей ванной комнатой и гардеробной, большая кухня-гостиная и функциональная детская комната.</p>
+                <ul class="plan-card__rooms">
+                  <li>Кухня-гостиная 18,10 м²</li>
+                  <li>Спальня 14,17 м²</li>
+                  <li>Детская 12,31 м²</li>
+                  <li>Два санузла</li>
+                </ul>
+                <a class="btn btn--primary" href="#contact">Получить расчёт на квартиру</a>
+              </div>
+            </article>
+
+            <article class="plan-card">
+              <div class="plan-card__draw">
+                <img src="images/plan-3.png" alt="Планировка трёхкомнатной квартиры 3C, 79,91 м²" />
+              </div>
+              <div class="plan-card__info">
+                <p class="plan-card__code">3C · 79,91 м²</p>
+                <h3>Семейная<br>трёхкомнатная</h3>
+                <p>Две детские комнаты, но можно сделать и кабинет. Два санузла, но можно сделать мастер-спальню. Отдельный вместительный гардероб для всей семьи.</p>
+                <ul class="plan-card__rooms">
+                  <li>Кухня-гостиная 19,81 м²</li>
+                  <li>Спальня 10,60 м²</li>
+                  <li>Две детские 14,82 и 11,98 м²</li>
+                  <li>Гардероб и два санузла</li>
+                </ul>
+                <a class="btn btn--primary" href="#contact">Получить актуальную цену</a>
+              </div>
+            </article>
+          </div>
         </div>
+
+        <button class="plans-slider__arrow plans-slider__arrow--next" type="button" aria-label="Следующая планировка">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+        </button>
+
+        <div class="plans-slider__dots" role="tablist" aria-label="Выбор планировки"></div>
+      </div>
+
+      <div class="container plan-points">
+        <article>
+          <h3>Планировки под семью</h3>
+          <p>Ориентированы на потребности каждого члена семьи</p>
+        </article>
+        <article>
+          <h3>Мастер-спальни</h3>
+          <p>С личным санузлом и гардеробной</p>
+        </article>
+        <article>
+          <h3>Шумоизоляция</h3>
+          <p>Квартиры с шумоизоляцией под стяжкой пола</p>
+        </article>
+        <article>
+          <h3>Тёплые лоджии</h3>
+          <p>С отоплением, начиная с 5 этажа</p>
+        </article>
       </div>
     </section>
 
